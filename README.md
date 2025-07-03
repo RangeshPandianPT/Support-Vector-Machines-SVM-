@@ -88,8 +88,9 @@ Evaluation includes:
 
 ## ✅ Output Visualizations
 
-* **Linear SVM**: `svm_linear_pca.png`
-* **RBF SVM**: `svm_rbf_pca.png`
+![Image](https://github.com/user-attachments/assets/1ef05814-ecad-4a9c-8408-f19d7bd8e585)
+
+![Image](https://github.com/user-attachments/assets/7c5670d6-1c67-4597-8ff1-8ec289f9fc2b)
 
 These plots show how each kernel classifies the data in 2D PCA space.
 
