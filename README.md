@@ -27,39 +27,6 @@ This project applies **Support Vector Machines (SVM)** to classify tumors as **M
 
 ---
 
-## 🚀 How to Run
-
-1. **Clone the repo**
-   ```bash
-   git clone https://github.com/yourusername/svm-breast-cancer.git
-   cd svm-breast-cancer
-````
-
-2. **Install dependencies**
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-   Or manually:
-
-   ```bash
-   pip install pandas numpy matplotlib scikit-learn
-   ```
-
-3. **Run the Python script**
-
-   ```bash
-   python svm_breast_cancer.py
-   ```
-
-   Or open the notebook:
-
-   ```bash
-   jupyter notebook svm_breast_cancer.ipynb
-   ```
-
----
 
 ## 📊 Model Evaluation
 
