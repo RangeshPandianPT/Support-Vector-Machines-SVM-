@@ -1,19 +1,102 @@
-# SVM Classification on Breast Cancer Dataset
+# 🧠 SVM Breast Cancer Classification
 
-## Description
-This project applies Support Vector Machines (SVM) to classify tumors as malignant or benign using the Breast Cancer dataset.
+This project applies **Support Vector Machines (SVM)** to classify tumors as **Malignant (M)** or **Benign (B)** using the **Breast Cancer Wisconsin Diagnostic Dataset**.
 
-## Contents
-- `svm_breast_cancer.py`: Python script
-- `svm_breast_cancer.ipynb`: Jupyter notebook version (optional)
-- `breast-cancer.csv`: Dataset
-- `svm_linear_pca.png`: Decision boundary (Linear Kernel)
-- `svm_rbf_pca.png`: Decision boundary (RBF Kernel)
+## 📂 Files Included
 
-## Instructions
-1. Install dependencies: `scikit-learn`, `pandas`, `matplotlib`, `numpy`.
-2. Run the Python script or explore interactively using the Jupyter notebook.
-3. Visualizations show SVM decision boundaries using PCA-reduced 2D features.
+| File | Description |
+|------|-------------|
+| `svm_breast_cancer.py` | Python script that loads data, trains SVMs, and visualizes results |
+| `svm_breast_cancer.ipynb` | Jupyter notebook for interactive exploration |
+| `breast-cancer.csv` | Cleaned dataset |
+| `svm_linear_pca.png` | Decision boundary using SVM with **Linear Kernel** |
+| `svm_rbf_pca.png` | Decision boundary using SVM with **RBF Kernel** |
+| `README.md` | Project overview and usage instructions |
 
-## Model Evaluation
-Grid Search with Cross-Validation is used to tune `C` and `gamma` parameters.
+---
+
+## 🧪 Project Overview
+
+- Binary classification: `M` = malignant, `B` = benign (converted to 1/0)
+- Scikit-learn SVM models used:
+  - `Linear Kernel`
+  - `RBF Kernel` (Radial Basis Function)
+- Feature scaling with `StandardScaler`
+- Visualization of decision boundaries using **PCA-reduced 2D** data
+- Hyperparameter tuning using **GridSearchCV**
+
+---
+
+## 🚀 How to Run
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/yourusername/svm-breast-cancer.git
+   cd svm-breast-cancer
+````
+
+2. **Install dependencies**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+   Or manually:
+
+   ```bash
+   pip install pandas numpy matplotlib scikit-learn
+   ```
+
+3. **Run the Python script**
+
+   ```bash
+   python svm_breast_cancer.py
+   ```
+
+   Or open the notebook:
+
+   ```bash
+   jupyter notebook svm_breast_cancer.ipynb
+   ```
+
+---
+
+## 📊 Model Evaluation
+
+Hyperparameter tuning done via **GridSearchCV** with cross-validation:
+
+* `C`: \[0.1, 1, 10]
+* `gamma`: \['scale', 0.01, 0.1, 1]
+
+Evaluation includes:
+
+* Accuracy
+* Precision, Recall, F1-score
+* Confusion Matrix (if extended)
+
+---
+
+## 📌 Key Concepts Covered
+
+* Support Vectors
+* Linear vs Non-linear Kernels
+* PCA for dimensionality reduction
+* Regularization (`C`)
+* Kernel trick (`gamma`)
+
+---
+
+## ✅ Output Visualizations
+
+* **Linear SVM**: `svm_linear_pca.png`
+* **RBF SVM**: `svm_rbf_pca.png`
+
+These plots show how each kernel classifies the data in 2D PCA space.
+
+---
+
+
+## ✍️ Author
+
+RANGESHPANDIAN PT
+
